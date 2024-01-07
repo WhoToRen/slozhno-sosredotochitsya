@@ -15,8 +15,9 @@
   --section-title-color: #FF0070;
   --article-title-color: #000028;
   --background-color: #000028;
-  --background-image: url(/images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --active-border: 1px solid #FF0070;
+  --active-color: #FF0070;
   --hover-border: rgba(255, 0, 112, 0.40);
   --hover-color: #FF0070;
   --focus-border-color: #FF0070;
@@ -43,6 +44,7 @@
   --background-color: #000028;
   --background-image: url(/images/cover-image-dark.png);
   --active-border: 1px solid #FF0070;
+  --active-color: #FF0070;
   --hover-border: rgba(255, 0, 112, 0.40);
   --hover-color: #FF0070;
   --focus-border-color: #FF0070;
