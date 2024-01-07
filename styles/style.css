@@ -3,6 +3,7 @@
 html,
 body {
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 .page {
@@ -130,6 +131,7 @@ body {
   font-weight: 700;
   line-height: 82.5%; 
   justify-self: flex-start;
+  margin-left: -10px;
 }
 
 .description {
@@ -219,11 +221,11 @@ body {
 .section_second {
   margin-block-start: 60px;
   display: grid;
-  grid-template-columns: none;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: fit-content minmax(min-content, max-content);
   grid-template-areas: 
-  "second_title"
-  "second_article";
+  "second_title . ."
+  "second_article second_article second_article";
   padding: 20px;
   gap: 20px;
 }
@@ -358,7 +360,7 @@ img:nth-of-type(5) {
   color: var(--hover-color);
 }
 
-@media (width < 768px) {
+@media (width <= 768px) {
   .header {
     display: grid;
     min-height: 100vh;
@@ -368,6 +370,10 @@ img:nth-of-type(5) {
     ". menu"
     "title title"
     ". description";
+  }
+
+  .title {
+    margin-left: 0;
   }
 
   .header__theme-menu {
@@ -384,11 +390,7 @@ img:nth-of-type(5) {
     flex-wrap: wrap;
     gap: 13px;
   }
-
-  .description {
-    margin-block-start: 162px;
-  }
-
+  
   .section_second {
     display: grid;
     grid-template-columns: none;
@@ -406,7 +408,7 @@ img:nth-of-type(5) {
   }
 }
 
-  @media (width < 375px) {
+  @media (width <= 375px) {
     .section {
       padding: 10px;
     }
@@ -415,11 +417,15 @@ img:nth-of-type(5) {
       display: grid;
       min-height: 100vh;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr)
+      grid-template-rows: repeat(3, 1fr);
       grid-template-areas: 
       "menu"
       "title"
       "description";
+    }
+
+    .title {
+      margin-left: 0;
     }
 
     .decorated-zone::before {
