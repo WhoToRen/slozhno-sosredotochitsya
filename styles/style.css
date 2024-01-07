@@ -19,7 +19,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
@@ -436,12 +436,25 @@ img:nth-of-type(5) {
     }
 
     .description {
-      margin-left: 20px;
       margin-block-end: 66px;
       margin-block-start: 55px;
     }
 
+   .section_first {
+      margin-block-start: 30px;
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: repeat(2, minmax(min-content, max-content));
+      grid-template-areas: 
+      "first_section_title"
+      "first_article";
+    }
+    .section_second {
+      margin-block-start: 40px;
+    }
+
     .section_third {
+      margin-block-start: 40px;
       display: grid;
       grid-template-columns: none;
       grid-template-rows: repeat(2, minmax(min-content, max-content));
@@ -450,13 +463,8 @@ img:nth-of-type(5) {
       "article_third";
     }
 
-    .section_first {
-      display: grid;
-      grid-template-columns: none;
-      grid-template-rows: repeat(2, minmax(min-content, max-content));
-      grid-template-areas: 
-      "first_section_title"
-      "first_article";
+    .section_fourth {
+      margin-block-start: 40px;
     }
 
     .gallery {
@@ -470,6 +478,10 @@ img:nth-of-type(5) {
       "tape"
       "books"
       "street";
+    }
+
+    .footer {
+      margin-block-start: 30px;
     }
 
     .title,
