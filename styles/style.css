@@ -9,8 +9,6 @@
   background-attachment: fixed;
 }
 
-/*хэдер*/
-
 .header {
   display: grid;
   position: relative;
@@ -58,8 +56,6 @@
     padding: 20px;
   }
 }
-
-/*углы*/
 
 .decorated_rec_icon {
   position: absolute;
@@ -231,8 +227,6 @@
   line-height: 130%;
 }
 
-/*основное*/
-
 .section_first,
 .section_second,
 .section_third,
@@ -312,10 +306,7 @@ section:first-child {
 @media (width >= 1024px) {
   .section_first {
     display: grid;
-    grid-template-columns: fit-content(314.96px) minmax(
-        min-content,
-        max-content
-      );
+    grid-template-columns: fit-content(314.96px) minmax(min-content, max-content);
     grid-template-rows: 1fr;
   }
 
