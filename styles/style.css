@@ -9,16 +9,18 @@
   background-attachment: fixed;
 }
 
+/*хэдер*/
+
 .header {
   display: grid;
   position: relative;
   padding: 10px;
   height: 100vh;
   grid-template-rows: 1fr min-content 1fr;
-  grid-template-areas: 
-  ". menu"
-  "title title"
-  "description description";
+  grid-template-areas:
+    ". menu"
+    "title title"
+    "description description";
 }
 
 @media (width >= 768px) {
@@ -27,10 +29,10 @@
     padding: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content 1fr;
-    grid-template-areas: 
-    ". menu"
-    "title title"
-    ". description";
+    grid-template-areas:
+      ". menu"
+      "title title"
+      ". description";
     margin-bottom: 40px;
   }
 }
@@ -41,10 +43,10 @@
     padding: 20px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr min-content 1fr;
-    grid-template-areas: 
-    "menu menu"
-    "title title"
-    ". description";
+    grid-template-areas:
+      "menu menu"
+      "title title"
+      ". description";
     margin-bottom: 40px;
   }
 }
@@ -59,67 +61,7 @@
   }
 }
 
-@media (width >= 1024px) {
-  .section_first {
-    display: grid;
-    grid-template-columns: fit-content(314.96px) minmax(min-content, max-content);
-    grid-template-rows: 1fr;
-  }
-
-  .section_second {
-    display: grid;
-    grid-template-rows: fit-content(314.96px) minmax(min-content, max-content);
-  }
-
-  .section_third {
-    display: grid;
-    grid-template-columns: fit-content(315px) minmax(min-content, max-content);
-    gap: 20px;
-  }
-
-  .section_first,
-  .section_second,
-  .section_third {
-    margin-bottom: 60px;
-  }
-}
-
-@media (width >= 768px) {
-  .section_first {
-    display: grid;
-    grid-template-columns: fit-content(236px) minmax(min-content, max-content);
-    grid-template-rows: 1fr;
-  }
-
-  .section_second {
-    display: grid;
-    grid-template-rows: fit-content(236px) minmax(min-content, max-content);
-    grid-template-columns: 236px 1fr 1fr;
-    grid-template-areas: 
-    "second-title . ."
-    "second_article second_article second_article";
-  }
-
-  .section_title_second {
-    grid-area: second-title;
-  }
-
-  .article_second {
-    grid-area: second_article;
-  }
-
-  .section_third {
-    display: grid;
-    grid-template-columns: fit-content(236px) minmax(min-content, max-content);
-    gap: 20px;
-  }
-
-  .section_first,
-  .section_second,
-  .section_third {
-    margin-bottom: 60px;
-  }
-}
+/*углы*/
 
 .decorated_rec_icon {
   position: absolute;
@@ -135,7 +77,7 @@
 }
 
 .decorated_rec_icon::after {
-  content: '';
+  content: "";
   display: block;
   width: 9px;
   height: 9px;
@@ -145,7 +87,7 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   right: 10px;
@@ -157,7 +99,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 10px;
@@ -173,7 +115,7 @@
     top: 20px;
     right: 29px;
   }
-  
+
   .decorated-zone::before {
     top: 20px;
     right: 20px;
@@ -207,8 +149,8 @@
     margin-block-start: 0px;
   }
 
-.header__theme-menu-list {
-   flex-direction: row;
+  .header__theme-menu-list {
+    flex-direction: row;
   }
 }
 
@@ -257,24 +199,32 @@
   background-color: var(--title-decor);
 }
 
-@media (width >= 768px) {
+@media (width >= 1024px) {
   .title {
-    margin-left: -10px;
+    margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     text-shadow: 4px 4px 0 var(--accent-color);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin-left: -20px;
   }
 }
 
 .description {
   grid-area: description;
   align-self: center;
-  color: var( --description-color);
+  color: var(--description-color);
   font-family: var(--main-font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
 }
+
+/*основное*/
 
 .section_first,
 .section_second,
@@ -296,21 +246,33 @@ section:first-child {
   gap: 20px;
 }
 
-@media (width >= 1024px) {
+@media (width >= 768px) {
   .section_first {
     display: grid;
-    grid-template-columns: fit-content(314.96px) minmax(min-content, max-content);
+    grid-template-columns: fit-content(236px) minmax(min-content, max-content);
     grid-template-rows: 1fr;
   }
 
   .section_second {
     display: grid;
-    grid-template-rows: fit-content(314.96px) minmax(min-content, max-content);
+    grid-template-rows: fit-content(236px) minmax(min-content, max-content);
+    grid-template-columns: 236px 1fr 1fr;
+    grid-template-areas:
+      "second-title . ."
+      "second_article second_article second_article";
+  }
+
+  .section_title_second {
+    grid-area: second-title;
+  }
+
+  .article_second {
+    grid-area: second_article;
   }
 
   .section_third {
     display: grid;
-    grid-template-columns: fit-content(315px) minmax(min-content, max-content);
+    grid-template-columns: fit-content(236px) minmax(min-content, max-content);
     gap: 20px;
   }
 
@@ -322,6 +284,15 @@ section:first-child {
 }
 
 @media (width >= 1024px) {
+  .section_first {
+    display: grid;
+    grid-template-columns: fit-content(314.96px) minmax(
+        min-content,
+        max-content
+      );
+    grid-template-rows: 1fr;
+  }
+
   .section_second {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -336,6 +307,18 @@ section:first-child {
 
   .section_title_second {
     grid-column: 1 / 2;
+  }
+
+  .section_third {
+    display: grid;
+    grid-template-columns: fit-content(315px) minmax(min-content, max-content);
+    gap: 20px;
+  }
+
+  .section_first,
+  .section_second,
+  .section_third {
+    margin-block-end: 60px;
   }
 }
 
@@ -383,6 +366,10 @@ section:first-child {
 }
 
 .section_title_fourth {
+  margin-bottom: 0;
+}
+
+.section_title_fourth {
   color: var(--article-title-color);
 }
 
@@ -405,7 +392,7 @@ section:first-child {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, min-content);
-    gap: 20px;
+    gap: 10px;
   }
 
   .section_title_fourth {
@@ -416,15 +403,15 @@ section:first-child {
   img:first-of-type {
     grid-column: span 2;
   }
-  
+
   img:nth-of-type(2) {
     grid-row: span 2;
   }
-  
+
   img:nth-of-type(3) {
     grid-row: span 2;
   }
-  
+
   img:nth-of-type(5) {
     grid-column: span 2;
   }
@@ -479,5 +466,3 @@ section:first-child {
 .link:focus-visible {
   outline: 1px solid var(--hover-border);
 }
-
-

@@ -6,24 +6,24 @@
 
 .page.theme_dark {
   --main-font-family: "IBM Plex Mono", sans-serif;
-  --main-text-color: #F1B2CE;
-  --logo-color: #DB00FF;
-  --accent-color: #FF0070;
-  --title-decor: #FF0070;
-  --button-color: #FF0070;
+  --main-text-color: #f1b2ce;
+  --logo-color: #db00ff;
+  --accent-color: #ff0070;
+  --title-decor: #ff0070;
+  --button-color: #ff0070;
   --description-color: #000028;
-  --section-title-color: #FF0070;
+  --section-title-color: #ff0070;
   --article-title-color: #000028;
   --subtitle-color: #000028;
   --background-color: #000028;
-  --decorated-zone-color: #FF0070; 
+  --decorated-zone-color: #ff0070;
   --background-image: url(../images/cover-image-dark.png);
-  --active-border: 1px solid #FF0070;
-  --active-color: #FF0070;
-  --hover-border: rgba(255, 0, 112, 0.40);
-  --hover-color: #FF0070;
-  --focus-border-color: #FF0070;
-  --focus-text-color: #FF0070;
+  --active-border: 1px solid #ff0070;
+  --active-color: #ff0070;
+  --hover-border: rgba(255, 0, 112, 0.4);
+  --hover-color: #ff0070;
+  --focus-border-color: #ff0070;
+  --focus-text-color: #ff0070;
   --section-padding: 20px;
 }
 
@@ -34,28 +34,28 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --main-font-family: "IBM Plex Mono", sans-serif;
-    --main-text-color: #F1B2CE;
-    --logo-color: #DB00FF;
-    --accent-color: #FF0070;
-    --title-decor: #FF0070;
-    --button-color: #FF0070;
+    --main-text-color: #f1b2ce;
+    --logo-color: #db00ff;
+    --accent-color: #ff0070;
+    --title-decor: #ff0070;
+    --button-color: #ff0070;
     --description-color: #000028;
     --subtitle-color: #000028;
-    --section-title-color: #FF0070;
+    --section-title-color: #ff0070;
     --article-title-color: #000028;
     --subtitle-color: #000028;
     --background-color: #000028;
-    --decorated-zone-color: #FF0070; 
+    --decorated-zone-color: #ff0070;
     --background-image: url(/images/cover-image-dark.png);
-    --active-border: 1px solid #FF0070;
-    --active-color: #FF0070;
-    --hover-border: rgba(255, 0, 112, 0.40);
-    --hover-color: #FF0070;
-    --focus-border-color: #FF0070;
-    --focus-text-color: #FF0070;
+    --active-border: 1px solid #ff0070;
+    --active-color: #ff0070;
+    --hover-border: rgba(255, 0, 112, 0.4);
+    --hover-color: #ff0070;
+    --focus-border-color: #ff0070;
+    --focus-text-color: #ff0070;
     --section-padding: 20px;
   }
- 
+
   .decorated_rec_icon {
     display: inline-flex;
   }
