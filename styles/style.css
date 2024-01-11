@@ -232,6 +232,7 @@
 
 /*основное*/
 
+.section_first,
 .section_second,
 .section_third,
 .gallery {
@@ -257,6 +258,7 @@ section:first-child {
     grid-template-columns: fit-content(236px) minmax(min-content, max-content);
     grid-template-rows: 1fr;
     gap: 20px;
+    margin-block-end: 0px;
   }
 
   .section_second {
