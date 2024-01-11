@@ -12,6 +12,7 @@
   --title-decor: #ff8dcb;
   --button-color: #353430;
   --description-color: #353430;
+  --subtitle-color: #353430;
   --section-title-color: #353430;
   --article-title-color: #353430;
   --background-color: #FFF1F7;
@@ -23,7 +24,6 @@
   --focus-border-color: #353430;
   --focus-text-color: #353430;
   --decorated-zone-color: #353430;
-  --section-padding: 20px;
 }
 
 .page.theme_light .decorated_rec_icon {

@@ -14,6 +14,7 @@
   --description-color: #000028;
   --section-title-color: #FF0070;
   --article-title-color: #000028;
+  --subtitle-color: #000028;
   --background-color: #000028;
   --background-image: url(../images/cover-image-dark.png);
   --active-border: 1px solid #FF0070;
@@ -22,8 +23,8 @@
   --hover-color: #FF0070;
   --focus-border-color: #FF0070;
   --focus-text-color: #FF0070;
-  --decorated-zone-color: #FF0070; 
   --section-padding: 20px;
+  --decorated-zone-color: #FF0070; 
 }
 
 .page.theme_dark .decorated_rec_icon {
@@ -39,8 +40,10 @@
   --title-decor: #FF0070;
   --button-color: #FF0070;
   --description-color: #000028;
+  --subtitle-color: #000028;
   --section-title-color: #FF0070;
   --article-title-color: #000028;
+  --subtitle-color: #000028;
   --background-color: #000028;
   --background-image: url(/images/cover-image-dark.png);
   --active-border: 1px solid #FF0070;
@@ -49,8 +52,8 @@
   --hover-color: #FF0070;
   --focus-border-color: #FF0070;
   --focus-text-color: #FF0070;
-  --decorated-zone-color: #FF0070; 
   --section-padding: 20px;
+  --decorated-zone-color: #FF0070; 
   }
  
   .decorated_rec_icon {
