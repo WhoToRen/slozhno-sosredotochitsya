@@ -465,7 +465,7 @@ section:first-child {
 }
 
 .link:hover {
-  border-bottom: 1px solid var(--hover-border);
+  border-bottom: 1px solid var(--hover-underline);
 }
 
 .link:focus {

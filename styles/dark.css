@@ -22,6 +22,7 @@
   --active-color: #ff0070;
   --hover-border: rgba(255, 0, 112, 0.4);
   --hover-color: #ff0070;
+  --hover-underline: #F1B2CE;
   --link-border: #F1B2CE;
   --focus-border-color: #ff0070;
   --focus-text-color: #ff0070;
@@ -47,12 +48,13 @@
     --subtitle-color: #000028;
     --background-color: #000028;
     --decorated-zone-color: #ff0070;
-    --background-image: url(/images/cover-image-dark.png);
+    --background-image: url(../images/cover-image-dark.png);
     --active-border: 1px solid #ff0070;
     --active-color: #ff0070;
     --hover-border: rgba(255, 0, 112, 0.4);
     --hover-color: #ff0070;
-    --link-border: #353430;
+    --hover-underline: #F1B2CE;
+    --link-border: #F1B2CE;
     --focus-border-color: #ff0070;
     --focus-text-color: #ff0070;
     --section-padding: 20px;
